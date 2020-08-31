@@ -1,0 +1,627 @@
+/*
+Theme Name: ECORE Design
+Theme URI: https://www.ecore.design/
+description: ECORE Design
+Author: Edward Margallo
+Author URI: https: //www.ecore.design/
+Template: hello-elementor
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: hello-elementor-child
+*/
+
+/* main css */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Barlow", Arial !important;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	color: #ccc;
+	background: rgb(43, 56, 143);
+	background: linear-gradient(90deg, rgba(43, 56, 143, 1) 50%, rgba(63, 80, 159, 1) 100%);
+}
+
+::-moz-selection {
+	color: #fff;
+	background: #999;
+}
+
+::selection {
+	color: #fff;
+	background: #999;
+}
+
+::-webkit-input-placeholder {
+	/* Edge */
+	color: #999;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #999;
+}
+
+::placeholder {
+	color: #999;
+}
+
+a {
+	color: #fff;
+}
+
+a:focus,
+a:hover,
+a:active {
+	outline: none !important;
+}
+
+b {
+	font-weight: 600 !important;
+}
+
+.text-dark {
+	color: #999 !important;
+}
+
+.text-dark a {
+	color: #333;
+}
+
+.text-dark p a {
+	color: #333;
+	font-weight: 400;
+	border-bottom: 1px dotted #999;
+}
+
+.text-dark a.elementor-button {
+	color: #fff !important;
+}
+
+.text-light a {
+	color: #fff;
+}
+
+.text-light p a {
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 1px dotted #ccc;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Exo 2", Arial !important;
+	font-weight: 300 !important;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #fff !important;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 21px;
+	font-weight: 600 !important;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 600 !important;
+} */
+
+body.home h1 {
+	font-size: 26px !important;
+	font-weight: 300 !important;
+	color: #777 !important;
+	line-height: 2;
+}
+
+
+body.home h1 a {
+	color: #2B3990;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+body.home h1 a:hover {
+	color: #999;
+}
+
+body:not(.home) h1 {
+	color: #999 !important;
+}
+
+/* .text-dark h1,
+.text-dark h2,
+.text-dark h3,
+.text-dark h4,
+.text-dark h5 {
+	color: #999 !important;
+} */
+
+.line-height-normal {
+	line-height: normal !important;
+}
+
+.elementor-button {
+	font-family: "Exo 2", Arial !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: #ccc;
+	border: 1px solid #3f509f;
+	background: #2B3990 !important;
+	border-radius: 5px;
+}
+
+.elementor-button:hover {
+	background: #3f509f !important;
+}
+
+.scrolled-logo-link {
+	display: none;
+	visibility: hidden;
+}
+
+.site-branding img {
+	width: 300px;
+}
+
+/* header */
+
+header {
+	background: #fff;
+	/* border-top: 1px solid red; */
+}
+
+body.home header .logo a {
+	display: none;
+	visibility: hidden;
+}
+
+.hfe-menu-item.elementor-button {
+	color: #fff !important;
+}
+
+/* body content styling */
+
+
+/* forms */
+
+.wpforms-field-container>div {
+	margin-bottom: 15px !important;
+}
+
+label {
+	display: block;
+	font-family: "Exo 2", Arial;
+	font-size: 13px !important;
+	font-weight: 400 !important;
+	color: #666;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+	padding-bottom: 5px;
+}
+
+select {
+	border: 1px solid #ccc !important;
+}
+
+.wpforms-container select,
+.wpforms-container option {
+	font-family: "Exo 2", Arial;
+	color: #666;
+	font-size: 14px !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+.wpforms-container ul {
+	padding: 0;
+	margin-top: 10px;
+}
+
+.wpforms-container ul li {
+	margin-bottom: 10px !important;
+}
+
+.wpforms-container ul li label {
+	cursor: pointer !important;
+}
+
+.wpforms-container ul li.wpforms-selected label {
+	color: #2A3990;
+	font-weight: 600 !important;
+}
+
+.wpforms-container ul li input[type="checkbox"] {
+	cursor: pointer !important;
+}
+
+.wpforms-form button,
+.btn {
+	font-family: "Exo 2", Arial;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	background: rgb(63, 80, 159);
+	background: radial-gradient(circle, rgba(63, 80, 159, 1) 0%, rgba(43, 56, 143, 1) 100%);
+	color:
+		#fff !important;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px 30px;
+	border: none !important;
+}
+
+.wpforms-submit-container {
+	text-align: center;
+	padding-top: 20px !important;
+}
+
+/* form return message */
+.wpforms-confirmation-container,
+.elementor-widget-text-editor {
+	color: #666;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/* buttons */
+
+.btn-small {
+	display: block;
+	padding: 3px 15px !important;
+	margin-bottom: 8px;
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: none;
+	letter-spacing: 0.5;
+	border-radius: 50px;
+}
+
+.btn-hex-big .elementor-button {
+	font-family: "Exo 2", Arial !important;
+	font-size: 20px !important;
+	font-weight: 600 !important;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	text-align: left;
+	padding-left: 55px !important;
+	color: #fff !important;
+	border: none;
+	background: transparent !important;
+	border-radius: initial;
+}
+
+.wpforms-form input[type="text"],
+.wpforms-form input[type="email"],
+.wpforms-form textarea {
+	font-family: "Barlow", Arial !important;
+	font-weight: 400;
+	font-size: 15px !important;
+	letter-spacing: 0.5px;
+	color: #333;
+	padding: 5px 0 !important;
+	border: none !important;
+	border-radius: 0;
+	border-bottom: 1px solid #ccc !important;
+}
+
+.wpforms-container label.wpforms-error {
+	/*color: #fff !important;
+	background: darkred;
+	padding: 1px 5px;*/
+	font-size: 12px !important;
+}
+
+
+div.wpforms-container-full .wpforms-form .wpforms-field input.wpforms-error,
+div.wpforms-container-full .wpforms-form .wpforms-field input.user-invalid,
+div.wpforms-container-full .wpforms-form .wpforms-field textarea.wpforms-error,
+div.wpforms-container-full .wpforms-form .wpforms-field textarea.user-invalid,
+div.wpforms-container-full .wpforms-form .wpforms-field select.wpforms-error,
+div.wpforms-container-full .wpforms-form .wpforms-field select.user-invalid {
+	border: none;
+	border-bottom: 1px solid darkred;
+}
+
+.wpforms-error-container {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* graphic / illustrations */
+
+.ecore-hex-div>div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 350px;
+}
+
+/* footer */
+
+footer {
+	display: none;
+	visibility: hidden;
+}
+
+.footer-menu ul {
+	list-style: none !important;
+	padding: 0 !important;
+	margin-left: 0 !important;
+}
+
+.footer-menu a {
+	display: block;
+	color: #999;
+	font-family: "Exo 2", Arial;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	border-top: 1px dotted #555;
+	line-height: 35px;
+}
+
+.footer-menu ul li:last-child a {
+	border-bottom: 1px dotted #555;
+}
+
+.footer-menu a:hover {
+	color: #fff;
+}
+
+/* lightbox */
+
+header.elementor-slideshow__header {
+	background: transparent;
+}
+
+header.elementor-slideshow__header i,
+.elementor-slideshow__counter {
+	display: none;
+}
+
+.dialog-widget {
+	z-index: 999 !important;
+}
+
+/*.menu-inside-wrapper {
+	z-index: 0;
+}*/
+
+.elementor-lightbox-image {
+	border-radius: 10px !important;
+}
+
+@media screen and (max-width: 1366px) {
+
+	/* header {
+		padding: 25px 0;
+	} */
+
+	header .logo {
+		z-index: 9999;
+	}
+
+	.hfe-nav-menu-icon {
+		position: fixed;
+		top: 25px;
+		right: 6%;
+	}
+
+	body.logged-in .hfe-nav-menu-icon {
+		top: 80px;
+	}
+
+	.elementor-2 .elementor-element.elementor-element-4df49043 {
+		padding-top: 0 !important;
+	}
+
+	/*.logo-hero {
+	max-width: 300px;
+}*/
+
+	body.home h1 {
+		font-size: 20px !important;
+	}
+
+	body.home h1 a {
+		font-size: 18px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/*.animated { all: unset; }*/
+
+
+
+
+
+
+	input,
+	textarea,
+	select {
+		/*font-family: "Roboto", Arial;*/
+		font-size: 18px !important;
+	}
+
+	input:focus,
+	select:focus,
+	textarea:focus {
+		outline: none;
+		-webkit-appearance: none;
+	}
+
+	h1 {
+		font-size: 24px !important;
+		letter-spacing: 2px !important;
+	}
+
+	body.home h1 {
+		font-size: 20px !important;
+	}
+
+	h2 {
+		font-size: 20px !important;
+		letter-spacing: 2px !important;
+	}
+
+	.hero-tagline h2 {
+		text-align: center;
+		font-size: 20px !important;
+		letter-spacing: 1px !important;
+		font-weight: 400;
+	}
+
+	h3 {
+		font-size: 16px !important;
+		letter-spacing: 2px !important;
+	}
+
+	#footer h2,
+	#footer h3 {
+		font-size: 14px !important;
+	}
+
+	/* header {
+		padding: 25px 0;
+	} */
+
+	.site-header-main {
+		padding-left: 20px;
+	}
+
+	.logo-hero {
+		display: none;
+	}
+
+	body.home header .site-branding {
+		display: block;
+	}
+
+	.logo img {
+		max-width: 150px;
+	}
+
+	/* new elementor stuff */
+
+	body.home header .logo a {
+		display: block;
+		visibility: visible;
+	}
+
+	.hfe-nav-menu-icon {
+		position: fixed;
+		top: 50px;
+		right: 6%;
+	}
+
+	body.logged-in .hfe-nav-menu-icon {
+		top: 80px;
+	}
+
+	/* header .elementor-row>div:first-child {
+		width: 85%;
+	}
+
+	header .elementor-row>div:last-child {
+		width: 15%;
+	} */
+
+	header nav {
+		margin-top: 75px;
+		-webkit-box-shadow: 0 5px 10px 0 #999;
+		box-shadow: 0 5px 10px 0 #999;
+	}
+
+	.hfe-menu-item {
+		text-align: center;
+		padding: 25px 20px !important;
+	}
+
+	.hfe-menu-item:hover,
+	.hfe-menu-item:active,
+	.hfe-menu-item:focus {
+		background-color: #eee !important;
+	}
+
+	/* .hfe-dropdown {
+		
+	} */
+
+	/* end new elementor stuff */
+
+
+	/* home */
+
+	.hero {
+		background-position: top center !important;
+		background-size: cover;
+		padding-top: 0 !important;
+	}
+
+	.hero-home {
+		padding-top: 0 !important;
+		min-height: 50vh !important;
+	}
+
+	.news-list ul li .post-date,
+	.news-list ul li a {
+		float: none;
+		display: block;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	.hero-home {
+		min-height: 420px !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hfe-nav-menu-icon {
+		position: fixed;
+		top: 50px;
+		right: 25px;
+	}
+
+	body.logged-in .hfe-nav-menu-icon {
+		top: 100px;
+	}
+}
+
+/* animations */
+
+.show {
+	opacity: 1;
+	transition: opacity 400ms;
+}
+
+.hide {
+	opacity: 0;
+	transition: opacity 400ms;
+}
